@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %title Music
+    = csrf_meta_tags
+    = csp_meta_tag
+    %link{href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css", rel: "stylesheet", type: "text/css"}/
+    %link{href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css", rel: "stylesheet", type: "text/css"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Indie+Flower", :rel => "stylesheet"}/
+    %script{crossorigin: "anonymous", integrity: "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=", src: "https://code.jquery.com/jquery-3.3.1.min.js"}
+    %script{src: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js", type: "text/javascript"}
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    = yield
+

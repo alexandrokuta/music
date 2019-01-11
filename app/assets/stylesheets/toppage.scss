@@ -1,0 +1,78 @@
+#header {
+  width: 100%;
+  .head__contents {
+    height: 60px;
+    background-color:$black;
+    font-size: 20px;
+    color: white;
+    line-height: 60px;
+    padding-left: 20px;
+  }
+}
+  .links {
+    height: 60px;
+    width: 200px;
+    margin-top: -60px;
+    float:right;
+    display: inline-block;
+    &__wrapper{
+      margin:0 auto;
+      height:60px;
+      width: 200px;
+      line-height:60px;
+    .mypage {
+      float:left;
+      padding-right:20px;
+      color: white;
+      width: 80px;
+      height: 60px;
+    }
+    .album {
+      float:left;
+      color: white;
+      width: 80px;
+      height: 60px;
+    }
+  }
+  }
+
+@mixin slide-set {
+  width: 800px;
+  height: 600px;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.slide__images {
+  .slide__image1 {
+    @include slide-set;
+    background-image: url("sleepless2.jpg")
+  }
+  .slide__image2 {
+    @include slide-set;
+    background-image: url("mosquito2.jpg")
+  }
+  .slide__image3 {
+    @include slide-set;
+    background-image: url("potato2.jpg")
+  }
+  .slide__image4 {
+    @include slide-set;
+    background-image: url("hawaii2.jpg");
+  }
+  .slide__image5 {
+    @include slide-set;
+    background-image: url("syuwa.jpg")
+  }
+}
+
+.your-class {
+  height:300px;
+  width: 300px;
+  margin: 0 auto;
+    .slide {
+      height:200px;
+      width: 200px;
+      background-color: aqua;
+    }
+}
